@@ -15,4 +15,26 @@
 body{
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    background-color: var(--Cream);
+}
+.container{
+    margin-right:1rem;
+    margin-left: 1rem;
+    width:90%;
+    margin-top: 4rem;
+}
+.my-balance{
+    background-color: var(--Soft-red);
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.b-text{
+    color: var(--Cream);
+}
+.b-text h4{
+    font-weight: 100;
+    margin-bottom: 50px;
 }
