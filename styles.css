@@ -83,3 +83,24 @@ body{
 .chart h5{
     color: var(--Medium-brown);
 }
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.this-month h5{
+    color: var(--Medium-brown);
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.this-month h2{
+    color: var(--Dark-brown);
+}
+.last-month{
+    text-align: end;
+}
+.last-month h4{
+    font-size: 15px;
+    color: var(--Medium-brown);
+    font-weight: 100;
+}
