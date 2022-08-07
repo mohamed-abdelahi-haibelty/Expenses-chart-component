@@ -12,7 +12,7 @@ for(let i =0;i<data.length;i++){
     let div2 = document.createElement("div");
     div2.classList.add("char");
     div2.classList.add(data[i].day);
-    let div3 = document.createElement("div");
+    let div3 = document.createElement("div");///price box
     div3.classList.add("box");
     let span = document.createElement("div");
     span.innerText = `$${data[i].amount}`;
@@ -24,6 +24,8 @@ for(let i =0;i<data.length;i++){
     h5.appendChild(text);
     div.appendChild(h5);
     chart.appendChild(div);
+
+    //////////////height/////////////////
     let per = (data[i].amount/total)*100;
     if(greater<per){
         greater = per;
@@ -33,7 +35,10 @@ for(let i =0;i<data.length;i++){
     div2.style.height = `${height}px`;
 }
 let chars = document.querySelectorAll(".char");
-document.querySelector(`.${day}`).classList.add("active");
+document.querySelector(`.${day}`).classList.add("active");//add blue style
+
+
+///display  price box when hover
 
 chars.forEach((char)=>{
     char.addEventListener("mouseover",()=>{
